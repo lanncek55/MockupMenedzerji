@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Life - Mobilno</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* gray-100 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        /* Mobile Device Simulation */
+        .device-simulator {
+            width: 390px; /* iPhone 12/13/14 width */
+            height: 844px; /* iPhone 12/13/14 height */
+            background-color: #f0fdf4; /* App bg color */
+            border-radius: 40px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+            position: relative;
+            border: 12px solid #1f2937; /* Dark gray border for phone frame */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Safe area notch simulation */
+        .device-simulator::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 25px;
+            background-color: #1f2937;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            z-index: 50;
+        }
+
+        /* Scrollable content area */
+        .app-content {
+            flex: 1;
+            overflow-y: auto;
+            padding-top: 35px; /* Space for notch */
+            padding-bottom: 70px; /* Space for bottom nav */
+            scrollbar-width: none; /* Firefox */
+        }
+        .app-content::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Edge */
+        }
+    </style>
+</head>
+<body>
+    <div class="device-simulator">
+        <!-- Top Status Bar (Fake) -->
+        <div class="absolute top-0 w-full h-8 flex justify-between items-end px-6 pb-1 text-xs font-semibold z-40 text-gray-800">
+            <span>9:41</span>
+            <div class="flex space-x-1 items-center mb-0.5">
+                <i class="fas fa-signal text-[10px]"></i>
+                <i class="fas fa-wifi text-[10px]"></i>
+                <i class="fas fa-battery-full text-[12px]"></i>
+            </div>
+        </div>
+
+        <div class="app-content">
+
+    <!-- Header -->
+    <header class="bg-[#114232] text-white p-4 pb-6 rounded-b-3xl mb-4 pt-10">
+        <div class="flex justify-between items-center mb-4">
+            <div class="flex items-center space-x-2">
+                <img src="logo.jpg" alt="Logo" class="w-8 h-8 rounded-full bg-white object-cover">
+                <span class="font-bold tracking-wider text-sm">FUTURISTIC LIFE</span>
+            </div>
+            <button class="w-8 h-8 rounded-full bg-white bg-opacity-20 flex items-center justify-center">
+                <i class="fas fa-bell text-sm"></i>
+            </button>
+        </div>
+        <h1 class="text-xl font-bold">Napredek Diagnostike</h1>
+    </header>
+
+            <main class="px-4">
+
+<div class="bg-white rounded-2xl p-5 shadow-sm mb-6 border border-gray-100">
+    <div class="flex items-center justify-between mb-4">
+        <h2 class="text-sm font-bold text-gray-800">Celovita analiza stanja</h2>
+        <span class="text-[10px] font-bold text-[#114232] bg-green-50 px-2 py-1 rounded-full">50% Končano</span>
+    </div>
+
+    <div class="w-full bg-gray-100 rounded-full h-1.5 mb-6">
+        <div class="bg-[#114232] h-1.5 rounded-full" style="width: 50%"></div>
+    </div>
+
+    <div class="space-y-0 text-xs font-medium text-gray-800">
+
+        <div class="flex items-start justify-between py-3 border-b border-gray-100">
+            <div class="flex items-start space-x-2 pr-2">
+                <span class="text-gray-400 font-normal w-3 mt-0.5">1.</span>
+                <span class="leading-snug">Izražanje genov - biološka starost</span>
+            </div>
+            <i class="fas fa-check text-green-500 mt-0.5"></i>
+        </div>
+
+        <div class="flex items-start justify-between py-3 border-b border-gray-100">
+            <div class="flex items-start space-x-2 pr-2">
+                <span class="text-gray-400 font-normal w-3 mt-0.5">2.</span>
+                <span class="leading-snug">Starost možganov in riziko za demenco</span>
+            </div>
+            <i class="fas fa-check text-green-500 mt-0.5"></i>
+        </div>
+
+        <div class="flex items-start justify-between py-3 border-b border-gray-100">
+            <div class="flex items-start space-x-2 pr-2">
+                <span class="text-gray-400 font-normal w-3 mt-0.5">3.</span>
+                <span class="leading-snug">Analiza stresa, bioritma ter obnove</span>
+            </div>
+            <i class="fas fa-check text-green-500 mt-0.5"></i>
+        </div>
+
+        <div class="flex items-start justify-between py-3 border-b border-gray-100">
+            <div class="flex items-start space-x-2 pr-2">
+                <span class="text-gray-400 font-normal w-3 mt-0.5">4.</span>
+                <span class="leading-snug">Ocena biološke starosti: test telomerov</span>
+            </div>
+            <i class="fas fa-check text-green-500 mt-0.5"></i>
+        </div>
+
+        <div class="flex items-start justify-between py-3 border-b border-gray-100">
+            <div class="flex items-start space-x-2 pr-2">
+                <span class="text-gray-400 font-normal w-3 mt-0.5">5.</span>
+                <span class="leading-snug text-gray-500">Antioksidativni status in razstrupljanje</span>
+            </div>
+            <i class="far fa-circle text-gray-300 mt-0.5"></i>
+        </div>
+
+        <div class="flex items-start justify-between py-3 border-b border-gray-100">
+            <div class="flex items-start space-x-2 pr-2">
+                <span class="text-gray-400 font-normal w-3 mt-0.5">6.</span>
+                <span class="leading-snug">Epigenetska analiza iz las</span>
+            </div>
+            <i class="fas fa-check text-green-500 mt-0.5"></i>
+        </div>
+
+        <div class="flex items-start justify-between py-3 border-b border-gray-100">
+            <div class="flex items-start space-x-2 pr-2">
+                <span class="text-gray-400 font-normal w-3 mt-0.5">7.</span>
+                <span class="leading-snug text-gray-500">Laboratorijska analiza funkcij organov</span>
+            </div>
+            <i class="far fa-circle text-gray-300 mt-0.5"></i>
+        </div>
+
+        <div class="flex items-start justify-between py-3 border-b border-gray-100">
+            <div class="flex items-start space-x-2 pr-2">
+                <span class="text-gray-400 font-normal w-3 mt-0.5">8.</span>
+                <span class="leading-snug text-gray-500">Metabolni indeks</span>
+            </div>
+            <i class="far fa-circle text-gray-300 mt-0.5"></i>
+        </div>
+
+        <div class="flex items-start justify-between py-3 border-b border-gray-100">
+            <div class="flex items-start space-x-2 pr-2">
+                <span class="text-gray-400 font-normal w-3 mt-0.5">9.</span>
+                <span class="leading-snug text-gray-500">Analiza vseh rezultatov</span>
+            </div>
+            <i class="far fa-clock text-yellow-500 mt-0.5"></i>
+        </div>
+
+        <div class="flex items-start justify-between py-3">
+            <div class="flex items-start space-x-2 pr-2">
+                <span class="text-gray-400 font-normal w-3 mt-0.5">10.</span>
+                <span class="leading-snug text-gray-500">Zaključni posvet s specialistom</span>
+            </div>
+            <i class="far fa-circle text-gray-300 mt-0.5"></i>
+        </div>
+
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+    <!-- Bottom Navigation -->
+    <nav class="absolute bottom-0 w-full bg-white border-t border-gray-200 pb-5 pt-3 px-6 z-40">
+        <div class="flex justify-between items-center">
+
+            <a href="domov.html" class="flex flex-col items-center space-y-1 text-gray-400 hover:text-[#114232] transition">
+                <i class="fas fa-home text-lg"></i>
+                <span class="text-[10px] font-medium">Domov</span>
+            </a>
+
+            <a href="narocanje.html" class="flex flex-col items-center space-y-1 text-gray-400 hover:text-[#114232] transition">
+                <i class="far fa-calendar-alt text-lg"></i>
+                <span class="text-[10px] font-medium">Naročanje</span>
+            </a>
+
+            <a href="napredek.html" class="flex flex-col items-center space-y-1 text-[#114232] transition">
+                <i class="fas fa-tasks text-lg"></i>
+                <span class="text-[10px] font-medium">Napredek</span>
+            </a>
+
+            <a href="storitve.html" class="flex flex-col items-center space-y-1 text-gray-400 hover:text-[#114232] transition">
+                <i class="fas fa-stethoscope text-lg"></i>
+                <span class="text-[10px] font-medium">Storitve</span>
+            </a>
+
+            <a href="nastavitve.html" class="flex flex-col items-center space-y-1 text-gray-400 hover:text-[#114232] transition">
+                <i class="fas fa-user-circle text-lg"></i>
+                <span class="text-[10px] font-medium">Profil</span>
+            </a>
+
+        </div>
+    </nav>
+
+    </div>
+</body>
+</html>
