@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Life - Pacienti</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0fdf4; /* Light green bg */
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 min-h-screen">
+    <div class="max-w-7xl mx-auto bg-[#eaf4ec] rounded-xl shadow-lg pb-1 overflow-hidden border border-green-100">
+        <div class="p-2 bg-[#114232] flex gap-2">
+           <div class="w-3 h-3 rounded-full bg-red-500"></div>
+           <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+           <div class="w-3 h-3 rounded-full bg-green-500"></div>
+        </div>
+
+    <!-- Header -->
+    <header class="bg-[#114232] text-white py-4 px-6 flex justify-between items-center rounded-t-xl mb-4">
+        <div class="flex items-center space-x-2">
+            <img src="logo.jpg" alt="Logo" class="w-10 h-10 rounded-full object-cover bg-white">
+            <span class="text-xl font-bold tracking-wider">FUTURISTIC LIFE</span>
+        </div>
+        <nav class="hidden md:flex space-x-6 text-sm font-medium">
+            <a href="index.html" class="hover:text-green-300 transition-colors">Domov</a>
+<a href="narocanje.html" class="hover:text-green-300 transition-colors">Naročanje</a>
+<a href="rezultati.html" class="hover:text-green-300 transition-colors">Moji Rezultati</a>
+<a href="storitve.html" class="hover:text-green-300 transition-colors">Storitve</a>
+<a href="#" class="hover:text-green-300 transition-colors">O Nas</a>
+<a href="#" class="hover:text-green-300 transition-colors">Kontakt</a>
+<a href="profil.html" class="hover:text-green-300 transition-colors">Profil</a>
+
+        </nav>
+        <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-2">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Janez Novak" class="w-8 h-8 rounded-full">
+                <span class="text-sm">Janez Novak</span>
+            </div>
+            <button class="hover:text-green-300"><i class="fas fa-bell"></i></button>
+            <button class="hover:text-green-300"><i class="fas fa-comment-dots"></i></button>
+        </div>
+    </header>
+
+
+        <div class="flex flex-col md:flex-row px-6 gap-6">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white rounded-xl shadow-sm overflow-hidden flex-shrink-0 h-fit">
+        <nav class="flex flex-col py-2">
+
+        <a href="index.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 transition-colors">
+            <i class="fas fa-home w-6"></i>
+            <span>Domov</span>
+        </a>
+
+        <a href="profil.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 transition-colors">
+            <i class="far fa-user w-6"></i>
+            <span>Profil</span>
+        </a>
+
+        <a href="narocanje.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 transition-colors">
+            <i class="far fa-calendar-alt w-6"></i>
+            <span>Naročanje</span>
+        </a>
+
+        <a href="rezultati.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 transition-colors">
+            <i class="fas fa-clipboard-list w-6"></i>
+            <span>Moji Rezultati</span>
+        </a>
+
+        <a href="storitve.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 transition-colors">
+            <i class="fas fa-stethoscope w-6"></i>
+            <span>Storitve</span>
+        </a>
+
+        <a href="sporocila.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 transition-colors">
+            <i class="far fa-envelope w-6"></i>
+            <span>Sporočila</span>
+        </a>
+
+        <a href="nastavitve.html" class="flex items-center px-4 py-3 bg-[#e8f5e9] text-[#114232] font-semibold border-l-4 border-[#114232] transition-colors">
+            <i class="fas fa-cog w-6"></i>
+            <span>Nastavitve</span>
+        </a>
+
+        </nav>
+    </aside>
+
+
+            <main class="flex-1">
+
+<div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+    <h2 class="text-2xl font-bold mb-6 text-[#114232]">Nastavitve</h2>
+
+    <div class="space-y-8">
+        <div>
+            <h3 class="text-lg font-semibold mb-4 border-b pb-2">Obvestila</h3>
+            <div class="space-y-3">
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="checkbox" checked class="form-checkbox h-5 w-5 text-[#114232] rounded focus:ring-[#114232]">
+                    <span class="text-gray-700">Obvesti me o novih sporočilih (Email)</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="checkbox" checked class="form-checkbox h-5 w-5 text-[#114232] rounded focus:ring-[#114232]">
+                    <span class="text-gray-700">Opomniki za preglede (SMS in Email)</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 text-[#114232] rounded focus:ring-[#114232]">
+                    <span class="text-gray-700">Obvesti me, ko so na voljo novi izvidi</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="checkbox" checked class="form-checkbox h-5 w-5 text-[#114232] rounded focus:ring-[#114232]">
+                    <span class="text-gray-700">Tedenske novice in nasveti o zdravju</span>
+                </label>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="text-lg font-semibold mb-4 border-b pb-2">Varnost in zasebnost</h3>
+            <div class="space-y-4">
+                <button class="text-[#114232] font-medium hover:underline block">Spremeni geslo</button>
+                <button class="text-[#114232] font-medium hover:underline block">Nastavitve dvostopenjske avtentikacije (2FA)</button>
+                <button class="text-[#114232] font-medium hover:underline block">Upravljanje z mojimi osebnimi podatki (GDPR)</button>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="text-lg font-semibold mb-4 border-b pb-2">Jezik in regija</h3>
+            <div class="max-w-xs">
+                <select class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:border-[#114232]">
+                    <option>Slovenščina</option>
+                    <option>English</option>
+                    <option>Deutsch</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="pt-4">
+            <button class="bg-[#114232] text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition">Shrani nastavitve</button>
+        </div>
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+    <footer class="bg-[#114232] text-white py-6 px-8 mt-8 rounded-b-xl flex justify-between items-center text-sm">
+        <div>
+            <p class="font-bold">Kontakt Info</p>
+            <p class="text-gray-300">dr. Ariana Vetrovec</p>
+        </div>
+        <div class="space-x-4">
+            <a href="narocanje.html" class="hover:text-green-300">Naročanje</a>
+            <a href="#" class="hover:text-green-300">Pravno</a>
+            <a href="sporocila.html" class="hover:text-green-300">Sporočila</a>
+            <a href="#" class="hover:text-green-300">Kontakt</a>
+            <a href="profil.html" class="hover:text-green-300">Profil</a>
+        </div>
+        <div class="text-right">
+            <p class="font-bold">Klinika Naslov</p>
+            <p class="text-gray-300">Klinika Zdraviteto Življenja</p>
+        </div>
+    </footer>
+
+    </div>
+</body>
+</html>
