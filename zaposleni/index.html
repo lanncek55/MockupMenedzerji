@@ -10,7 +10,7 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f0fdf4;
+            background-color: #f0fdf4; /* Light green bg */
         }
     </style>
 </head>
@@ -26,26 +26,17 @@
     <header class="bg-[#114232] text-white py-4 px-6 flex justify-between items-center rounded-t-xl mb-4">
         <div class="flex items-center space-x-2">
             <img src="logo.jpg" alt="Logo" class="w-10 h-10 rounded-full object-cover bg-white">
-            <span class="text-xl font-bold tracking-wider">FUTURISTIC LIFE</span>
+            <span class="text-xl font-bold tracking-wider">FUTURISTIC LIFE <span class="text-xs font-normal text-green-300 ml-2">PORTAL ZA OSEBJE</span></span>
         </div>
-        <nav class="hidden md:flex space-x-6 text-sm font-medium">
-            <a href="index.html" class="hover:text-green-300 transition-colors">Urnik</a>
-<a href="pacienti.html" class="hover:text-green-300 transition-colors">Pacienti</a>
-<a href="izvidi.html" class="hover:text-green-300 transition-colors">Izvidi</a>
-<a href="nastavitve.html" class="hover:text-green-300 transition-colors">Nastavitve</a>
-<a href="#" class="hover:text-green-300 transition-colors">Podpora</a>
-
-        </nav>
         <div class="flex items-center space-x-4">
-            <div class="flex flex-col items-end">
-                <span class="text-sm font-semibold">Dr. Ariana Vetrovec</span>
-                <span class="text-xs text-green-300">Direktor</span>
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 rounded-full bg-green-700 flex items-center justify-center text-sm font-bold">
+                    AV
+                </div>
+                <span class="text-sm">Dr. Ariana Vetrovec</span>
             </div>
-            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Dr. Ariana Vetrovec" class="w-10 h-10 rounded-full border-2 border-white">
-            <button class="hover:text-green-300 relative">
-                <i class="fas fa-bell text-lg"></i>
-                <span class="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full border border-[#114232]"></span>
-            </button>
+            <button class="hover:text-green-300"><i class="fas fa-bell"></i></button>
+            <button class="hover:text-green-300"><i class="fas fa-sign-out-alt"></i></button>
         </div>
     </header>
 
@@ -57,8 +48,8 @@
         <nav class="flex flex-col py-2">
 
         <a href="index.html" class="flex items-center px-4 py-3 bg-[#e8f5e9] text-[#114232] font-semibold border-l-4 border-[#114232] transition-colors">
-            <i class="fas fa-calendar-day w-6"></i>
-            <span>Urnik</span>
+            <i class="fas fa-calendar-alt w-6"></i>
+            <span>Urnik in Naročila</span>
         </a>
 
         <a href="pacienti.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 transition-colors">
@@ -67,8 +58,8 @@
         </a>
 
         <a href="izvidi.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 transition-colors">
-            <i class="fas fa-clipboard-check w-6"></i>
-            <span>Izvidi</span>
+            <i class="fas fa-file-medical w-6"></i>
+            <span>Izvidi in Dokumenti</span>
         </a>
 
         <a href="sporocila.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 transition-colors">
@@ -87,89 +78,81 @@
 
             <main class="flex-1">
 
-<!-- Hero Section -->
-<div class="bg-[#114232] rounded-xl p-8 text-white mb-6 flex justify-between items-center relative overflow-hidden">
-    <div class="z-10">
-        <h1 class="text-3xl font-light mb-1">Futuristic Life –</h1>
-        <h2 class="text-4xl font-bold">Panel za Osebje</h2>
-    </div>
-    <div class="w-24 h-24 rounded-full border-4 border-white/20 p-1 z-10 bg-white">
-        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Dr. Ariana Vetrovec" class="w-full h-full rounded-full object-cover">
-    </div>
-    <!-- Decorative background elements -->
-    <div class="absolute -right-20 -top-20 w-64 h-64 rounded-full border border-white/10 opacity-50"></div>
-    <div class="absolute -right-10 -bottom-10 w-48 h-48 rounded-full border border-white/10 opacity-50"></div>
-</div>
-
 <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-    <!-- Left Column: Dnevni urnik -->
+    <!-- Left Column (Span 1) -->
     <div class="lg:col-span-1 space-y-6">
-        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
-            <div class="flex justify-between items-center mb-4">
-                <h3 class="font-bold text-gray-800 text-lg">Dnevni urnik</h3>
-                <i class="fas fa-chevron-up text-gray-400"></i>
+
+        <!-- Welcome Card -->
+        <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center">
+            <div class="w-16 h-16 rounded-full bg-green-100 mx-auto flex items-center justify-center text-[#114232] text-2xl font-bold mb-3 border-2 border-[#114232]">
+                AV
             </div>
-            <div class="space-y-3">
-                <div class="flex justify-between items-center bg-gray-50 p-3 rounded-lg border-l-4 border-gray-300">
-                    <div>
-                        <p class="text-sm font-semibold text-gray-400 line-through">08:00 <span class="font-normal">Janez Novak</span></p>
-                        <p class="text-xs text-gray-400 line-through">09:00 Posvet</p>
+            <h2 class="text-xl font-bold text-gray-800">Dr. Ariana Vetrovec</h2>
+            <p class="text-sm text-gray-500 mb-4">Vodja klinike / Specialistka</p>
+        </div>
+
+        <!-- Mini Calendar / Date Picker -->
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+             <div class="flex justify-between items-center mb-4">
+                <h3 class="font-bold text-gray-800">Maj 2024</h3>
+                <div class="flex space-x-2">
+                    <button class="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200"><i class="fas fa-chevron-left text-xs"></i></button>
+                    <button class="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200"><i class="fas fa-chevron-right text-xs"></i></button>
+                </div>
+            </div>
+            <div class="grid grid-cols-7 gap-1 text-center mb-2">
+                <div class="text-xs font-semibold text-gray-500">P</div>
+                <div class="text-xs font-semibold text-gray-500">T</div>
+                <div class="text-xs font-semibold text-gray-500">S</div>
+                <div class="text-xs font-semibold text-gray-500">Č</div>
+                <div class="text-xs font-semibold text-gray-500">P</div>
+                <div class="text-xs font-semibold text-gray-500">S</div>
+                <div class="text-xs font-semibold text-gray-500">N</div>
+            </div>
+            <div class="grid grid-cols-7 gap-1 text-center text-sm">
+                <!-- Row 1 -->
+                <div class="py-1 text-gray-400">29</div><div class="py-1 text-gray-400">30</div><div class="py-1">1</div><div class="py-1">2</div><div class="py-1">3</div><div class="py-1">4</div><div class="py-1">5</div>
+                <!-- Row 2 -->
+                <div class="py-1">6</div><div class="py-1">7</div><div class="py-1">8</div><div class="py-1">9</div><div class="py-1">10</div><div class="py-1">11</div><div class="py-1">12</div>
+                <!-- Row 3 -->
+                <div class="py-1">13</div><div class="py-1">14</div><div class="py-1 bg-[#114232] text-white rounded-md font-bold">15</div><div class="py-1 relative">16<div class="absolute bottom-0 w-1 h-1 bg-red-500 rounded-full left-1/2 transform -translate-x-1/2"></div></div><div class="py-1">17</div><div class="py-1">18</div><div class="py-1">19</div>
+                 <!-- Row 4 -->
+                <div class="py-1">20</div><div class="py-1">21</div><div class="py-1">22</div><div class="py-1">23</div><div class="py-1">24</div><div class="py-1">25</div><div class="py-1">26</div>
+            </div>
+            <button class="w-full mt-4 bg-gray-100 text-gray-700 py-2 rounded-lg text-sm font-medium hover:bg-gray-200 transition">Dodaj nov termin</button>
+        </div>
+
+        <!-- Današnji pacienti -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="bg-[#114232] text-white p-4">
+                <h3 class="font-bold">Današnji urnik (15. Maj)</h3>
+            </div>
+            <div class="divide-y divide-gray-100 max-h-80 overflow-y-auto">
+                <div class="p-4 hover:bg-gray-50 transition cursor-pointer border-l-4 border-green-500">
+                    <div class="flex justify-between items-start mb-1">
+                        <span class="text-sm font-bold text-gray-800">09:00 - 09:30</span>
+                        <span class="text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded-full">Potrjeno</span>
                     </div>
-                    <i class="fas fa-chevron-right text-gray-200 text-sm"></i>
+                    <p class="font-semibold text-[#114232]">Marija Kovač</p>
+                    <p class="text-xs text-gray-500">Splošni pregled</p>
                 </div>
 
-                <div class="flex justify-between items-center bg-[#eaf4ec] p-3 rounded-lg border-l-4 border-[#114232]">
-                    <div>
-                        <p class="text-sm font-bold text-gray-900">10:00 <span class="font-semibold">Janez Novak</span></p>
-                        <p class="text-xs text-gray-700 font-medium">10:00 Posvet</p>
+                <div class="p-4 hover:bg-gray-50 transition cursor-pointer border-l-4 border-yellow-500">
+                    <div class="flex justify-between items-start mb-1">
+                        <span class="text-sm font-bold text-gray-800">10:00 - 11:00</span>
+                        <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded-full">Čaka</span>
                     </div>
-                    <i class="fas fa-chevron-right text-[#114232] text-sm"></i>
+                    <p class="font-semibold text-[#114232]">Janez Novak</p>
+                    <p class="text-xs text-gray-500">Posvet za dolgoživost</p>
                 </div>
 
-                <div class="flex justify-between items-center p-3 rounded-lg hover:bg-gray-50 transition border-l-4 border-transparent">
-                    <div>
-                        <p class="text-sm font-semibold text-gray-800">11:00 <span class="font-normal text-gray-600">Ariana Vetrovec</span></p>
-                        <p class="text-xs text-gray-500">12:00 Posvet</p>
+                <div class="p-4 hover:bg-gray-50 transition cursor-pointer border-l-4 border-gray-300">
+                    <div class="flex justify-between items-start mb-1">
+                        <span class="text-sm font-bold text-gray-800">14:00 - 15:00</span>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">Prosto</span>
                     </div>
-                    <i class="fas fa-chevron-right text-gray-300 text-sm"></i>
-                </div>
-
-                <div class="flex justify-between items-center p-3 rounded-lg hover:bg-gray-50 transition border-l-4 border-transparent">
-                    <div>
-                        <p class="text-sm font-semibold text-gray-800">12:00 <span class="font-normal text-gray-600">Ariana Vetrovec</span></p>
-                        <p class="text-xs text-gray-500">13:00 Posvet</p>
-                    </div>
-                    <i class="fas fa-chevron-right text-gray-300 text-sm"></i>
-                </div>
-
-                <div class="flex justify-between items-center p-3 rounded-lg hover:bg-gray-50 transition border-l-4 border-transparent">
-                    <div>
-                        <p class="text-sm font-semibold text-gray-800">14:00 <span class="font-normal text-gray-600">Dr. Ariana Vetrovec</span></p>
-                        <p class="text-xs text-gray-500">15:00 Posvet</p>
-                    </div>
-                    <i class="fas fa-chevron-right text-gray-300 text-sm"></i>
-                </div>
-
-                 <div class="flex justify-between items-center p-3 rounded-lg hover:bg-gray-50 transition border-l-4 border-transparent">
-                    <div>
-                        <p class="text-sm font-semibold text-gray-800">18:00 <span class="font-normal text-gray-600">Janez Novak</span></p>
-                        <p class="text-xs text-gray-500">16:00 Posvet</p>
-                    </div>
-                    <i class="fas fa-chevron-right text-gray-300 text-sm"></i>
-                </div>
-                 <div class="flex justify-between items-center p-3 rounded-lg hover:bg-gray-50 transition border-l-4 border-transparent">
-                    <div>
-                        <p class="text-sm font-semibold text-gray-800">28.10 <span class="font-normal text-gray-600">Ariana Vetrovec</span></p>
-                        <p class="text-xs text-gray-500">17:00 Posvet</p>
-                    </div>
-                    <i class="fas fa-chevron-right text-gray-300 text-sm"></i>
-                </div>
-                 <div class="flex justify-between items-center p-3 rounded-lg hover:bg-gray-50 transition border-l-4 border-transparent">
-                    <div>
-                        <p class="text-sm font-semibold text-gray-800">08:00 <span class="font-normal text-gray-600">Janez Novak</span></p>
-                        <p class="text-xs text-gray-500">18:00 Posvet</p>
-                    </div>
-                    <i class="fas fa-chevron-right text-gray-300 text-sm"></i>
+                    <p class="font-semibold text-gray-400">Zasežen termin (D.Vet.)</p>
+                    <p class="text-xs text-gray-400">-</p>
                 </div>
             </div>
         </div>
@@ -177,9 +160,122 @@
 
     <!-- Right Column (Span 2) -->
     <div class="lg:col-span-2 space-y-6">
-        <!-- Top Cards Row -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
+        <!-- Upravljanje koledarja (Full Calendar View) -->
+        <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl font-bold text-[#114232]">Tedenski pregled</h2>
+                <div class="flex space-x-2">
+                    <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-200">Dan</button>
+                    <button class="px-4 py-2 bg-[#114232] text-white rounded-lg text-sm font-medium shadow-sm">Teden</button>
+                    <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-200">Mesec</button>
+                </div>
+            </div>
+
+            <!-- Calendar Grid (Simplified for staff) -->
+            <div class="overflow-x-auto">
+                <div class="min-w-[600px]">
+                    <!-- Header -->
+                    <div class="grid grid-cols-6 gap-2 mb-2 border-b border-gray-200 pb-2">
+                        <div class="text-xs text-gray-400 w-12 text-right pr-2">Ura</div>
+                        <div class="text-sm font-bold text-center text-gray-800">Pon 13.</div>
+                        <div class="text-sm font-bold text-center text-gray-800">Tor 14.</div>
+                        <div class="text-sm font-bold text-center text-[#114232] bg-green-50 rounded">Sre 15.</div>
+                        <div class="text-sm font-bold text-center text-gray-800">Čet 16.</div>
+                        <div class="text-sm font-bold text-center text-gray-800">Pet 17.</div>
+                    </div>
+
+                    <!-- Time slots -->
+                    <div class="relative h-[400px] overflow-y-auto pr-2">
+                        <!-- Grid lines -->
+                        <div class="absolute w-full flex flex-col space-y-[48px] top-[24px]">
+                            <div class="border-b border-gray-100 w-full"></div>
+                            <div class="border-b border-gray-100 w-full"></div>
+                            <div class="border-b border-gray-100 w-full"></div>
+                            <div class="border-b border-gray-100 w-full"></div>
+                            <div class="border-b border-gray-100 w-full"></div>
+                            <div class="border-b border-gray-100 w-full"></div>
+                            <div class="border-b border-gray-100 w-full"></div>
+                        </div>
+
+                        <!-- 08:00 -->
+                        <div class="grid grid-cols-6 gap-2 mb-4 relative z-10 h-12">
+                            <div class="text-xs text-gray-400 w-12 text-right pr-2 pt-1">08:00</div>
+                            <div></div>
+                            <div></div>
+                            <div class="bg-gray-100 border border-gray-200 rounded p-1 text-xs text-gray-500 overflow-hidden">
+                                Nedosegljivo
+                            </div>
+                            <div></div>
+                            <div></div>
+                        </div>
+
+                        <!-- 09:00 -->
+                        <div class="grid grid-cols-6 gap-2 mb-4 relative z-10 h-12">
+                            <div class="text-xs text-gray-400 w-12 text-right pr-2 pt-1">09:00</div>
+                            <div></div>
+                            <div class="bg-blue-50 border-l-2 border-blue-500 rounded p-1 text-xs overflow-hidden">
+                                <span class="font-bold block">A. Horvat</span> Splošni p.
+                            </div>
+                            <div class="bg-green-50 border-l-2 border-green-500 rounded p-1 text-xs overflow-hidden shadow-sm">
+                                <span class="font-bold block">M. Kovač</span> Splošni p.
+                            </div>
+                            <div></div>
+                            <div></div>
+                        </div>
+
+                        <!-- 10:00 -->
+                        <div class="grid grid-cols-6 gap-2 mb-4 relative z-10 h-12">
+                            <div class="text-xs text-gray-400 w-12 text-right pr-2 pt-1">10:00</div>
+                            <div class="bg-purple-50 border-l-2 border-purple-500 rounded p-1 text-xs overflow-hidden h-[100px]">
+                                <span class="font-bold block">B. Zupan</span> Genetski test
+                            </div>
+                            <div></div>
+                            <div class="bg-yellow-50 border-l-2 border-yellow-500 rounded p-1 text-xs overflow-hidden h-[100px] shadow-sm">
+                                <span class="font-bold block">J. Novak</span> Posvet (dolgo)
+                            </div>
+                            <div class="bg-blue-50 border-l-2 border-blue-500 rounded p-1 text-xs overflow-hidden">
+                                <span class="font-bold block">T. Kolar</span> Splošni p.
+                            </div>
+                            <div></div>
+                        </div>
+
+                        <!-- 11:00 -->
+                        <div class="grid grid-cols-6 gap-2 mb-4 relative z-10 h-12">
+                            <div class="text-xs text-gray-400 w-12 text-right pr-2 pt-1">11:00</div>
+                            <div></div> <!-- Spans from 10:00 -->
+                            <div></div>
+                            <div></div> <!-- Spans from 10:00 -->
+                            <div></div>
+                            <div class="bg-blue-50 border-l-2 border-blue-500 rounded p-1 text-xs overflow-hidden">
+                                <span class="font-bold block">K. Vidmar</span>
+                            </div>
+                        </div>
+
+                        <!-- 12:00 -->
+                        <div class="grid grid-cols-6 gap-2 mb-4 relative z-10 h-12">
+                            <div class="text-xs text-gray-400 w-12 text-right pr-2 pt-1">12:00</div>
+                            <div class="col-span-5 bg-gray-50 flex items-center justify-center rounded border border-gray-200 text-sm text-gray-400 font-medium">
+                                Odmor za malico
+                            </div>
+                        </div>
+
+                        <!-- 13:00 -->
+                        <div class="grid grid-cols-6 gap-2 mb-4 relative z-10 h-12">
+                            <div class="text-xs text-gray-400 w-12 text-right pr-2 pt-1">13:00</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hitra dejanja & Obvestila -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <!-- Hitro iskanje -->
             <div class="bg-[#a3c9b1] rounded-xl p-5 shadow-sm border border-[#8eb79e] flex flex-col justify-center">
                 <div class="flex items-center space-x-2 text-[#114232] mb-3">
@@ -187,102 +283,30 @@
                     <span class="font-semibold text-lg">Hitro iskanje<br>pacienta</span>
                 </div>
                 <div class="relative">
-                    <input type="text" placeholder="Iskanj..." class="w-full pl-8 pr-3 py-2 rounded-lg bg-white border-none focus:outline-none focus:ring-2 focus:ring-[#114232] text-sm">
+                    <input type="text" placeholder="Vpišite ime ali priimek..." class="w-full pl-8 pr-3 py-2 rounded-lg bg-white border-none focus:outline-none focus:ring-2 focus:ring-[#114232] text-sm shadow-sm">
                     <i class="fas fa-search absolute left-3 top-2.5 text-gray-400 text-sm"></i>
                 </div>
             </div>
 
-            <!-- Zadnje kartoteke -->
-            <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 flex flex-col justify-between">
-                <div class="flex items-center justify-between mb-3 text-gray-800">
-                    <span class="font-bold">Zadnje kartoteke</span>
-                </div>
-                <div class="space-y-2 text-sm">
-                    <div class="flex justify-between items-center border-b pb-1">
-                        <span class="text-gray-600">Dr. Ariana Vetrovec</span>
-                        <i class="fas fa-chevron-right text-gray-300 text-xs"></i>
-                    </div>
-                    <a href="pacienti.html" class="flex justify-between items-center border-b pb-1 hover:bg-gray-50 transition cursor-pointer">
-                        <span class="text-gray-900 font-medium">Dr. Janez Novak</span>
-                        <i class="fas fa-chevron-right text-[#114232] text-xs"></i>
-                    </a>
-                    <div class="flex justify-between items-center border-b pb-1">
-                        <span class="text-gray-600">Dr. Ariana Vetrovec</span>
-                        <i class="fas fa-chevron-right text-gray-300 text-xs"></i>
-                    </div>
-                    <div class="flex justify-between items-center">
-                        <span class="text-gray-600">Dr. Ariana Vetrovec</span>
-                        <i class="fas fa-chevron-right text-gray-300 text-xs"></i>
-                    </div>
-                </div>
-            </div>
-
             <!-- Zdravstvena obvestila -->
-            <div class="bg-[#a3c9b1] rounded-xl p-5 shadow-sm flex flex-col justify-between border border-[#8eb79e]">
-                <div class="flex items-center space-x-2 text-[#114232] mb-2">
-                    <i class="far fa-file-alt text-xl"></i>
-                    <span class="font-bold">Zdravstvena<br>obvestila</span>
-                </div>
-                <div class="flex justify-between mt-2 mb-4">
-                    <div class="text-center">
-                        <span class="block text-2xl font-bold text-[#114232]">10</span>
-                        <span class="text-xs text-[#114232]">Novi izvidi</span>
-                    </div>
-                    <div class="text-center">
-                        <span class="block text-2xl font-bold text-[#114232]">0</span>
-                        <span class="text-xs text-[#114232]">izvidi</span>
-                    </div>
-                </div>
-                <a href="izvidi.html" class="bg-[#114232] text-white text-center py-2 rounded-lg text-sm hover:bg-opacity-90 transition font-medium w-full">Pregledaj</a>
-            </div>
-        </div>
-
-        <!-- Grid of Services / Notifications -->
-        <div>
-            <h3 class="text-xl font-semibold mb-4 text-gray-800">Grid of Services</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <!-- Novi izvidi Card -->
-                <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 flex flex-col justify-between">
-                    <div>
-                        <div class="w-8 h-8 bg-[#a3c9b1] rounded-lg flex items-center justify-center text-[#114232] mb-3">
+            <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center space-x-2 text-[#114232] mb-3">
+                        <div class="w-8 h-8 bg-[#eaf4ec] rounded-lg flex items-center justify-center">
                             <i class="fas fa-clipboard-check"></i>
                         </div>
-                        <h4 class="font-bold mb-3 text-gray-800">Novi izvidi</h4>
-
-                        <div class="flex justify-between items-center text-sm mb-2">
-                            <span class="text-gray-600">14 asratnje</span>
-                            <span class="font-medium text-gray-400">0</span>
-                        </div>
-                        <div class="flex justify-between items-center text-sm mb-4">
-                            <span class="text-gray-900 font-medium">18 novi izvidi</span>
-                            <span class="font-bold text-[#114232]">0</span>
-                        </div>
+                        <h4 class="font-bold text-gray-800">Nova naročila v obdelavi</h4>
                     </div>
-                    <a href="izvidi.html" class="bg-[#114232] text-white text-center py-2 rounded-lg text-sm hover:bg-opacity-90 transition font-medium w-full mt-2">Pregledaj</a>
-                </div>
-
-                <!-- Zdravstvena obvestila info -->
-                <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
-                    <div class="w-8 h-8 bg-[#a3c9b1] rounded-lg flex items-center justify-center text-[#114232] mb-3">
-                        <i class="fas fa-info"></i>
+                    <div class="flex justify-between items-center text-sm mb-2 pb-2 border-b border-gray-50">
+                        <span class="text-gray-600 font-medium">Spletna naročila (čaka potrditev)</span>
+                        <span class="font-bold text-red-500 bg-red-50 px-2 py-0.5 rounded-full">3</span>
                     </div>
-                    <h4 class="font-bold mb-2 text-gray-800">Zdravstvena obvestila</h4>
-                    <p class="text-xs text-gray-600 leading-relaxed mb-3">Medicina za dolgoživost. splošni pr... uporabo najnaprednejših metod za o... življenja.</p>
-                    <p class="text-xs text-gray-600 leading-relaxed">Ponujamo celostne storitve: splošni p... diagnsti testi in personalizirani načrt...</p>
+                     <div class="flex justify-between items-center text-sm">
+                        <span class="text-gray-600">Prošnje za odpoved</span>
+                        <span class="font-bold text-yellow-600 bg-yellow-50 px-2 py-0.5 rounded-full">1</span>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Medicinski vira Promo -->
-        <div class="bg-white rounded-xl flex flex-col md:flex-row overflow-hidden shadow-sm border border-gray-100">
-            <div class="w-full md:w-1/2 h-48 md:h-auto">
-                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Zdravje" class="w-full h-full object-cover">
-            </div>
-            <div class="w-full md:w-1/2 p-6 flex flex-col justify-center">
-                <h3 class="text-xl font-bold mb-3 text-gray-800">Medicinski vir</h3>
-                <p class="text-sm text-gray-600 mb-2">Medicina za dolgoži... Diagnosticiramo in p... uporabo najnapred... kvaliteto življenja.</p>
-                <p class="text-sm text-gray-600 mb-5">Ponujamo celostne s... genetski testi, napra... personalizirani načrt...</p>
-                <button class="bg-[#114232] text-white py-2 px-6 rounded-full text-sm hover:bg-opacity-90 transition self-start font-medium w-full sm:w-auto">Nar...</button>
+                <button class="bg-gray-100 text-gray-700 text-center py-2 rounded-lg text-sm hover:bg-gray-200 transition font-medium w-full mt-4">Prikaži vse</button>
             </div>
         </div>
 
@@ -295,19 +319,18 @@
 
     <footer class="bg-[#114232] text-white py-6 px-8 mt-8 rounded-b-xl flex justify-between items-center text-sm">
         <div>
-            <p class="font-bold">Kontakt Info</p>
-            <p class="text-gray-300">dr. Ariana Vetrovec</p>
+            <p class="font-bold">Futuristic Life</p>
+            <p class="text-gray-300">Portal za osebje</p>
         </div>
         <div class="space-x-4">
             <a href="index.html" class="hover:text-green-300">Urnik</a>
-            <a href="#" class="hover:text-green-300">Pravno</a>
+            <a href="pacienti.html" class="hover:text-green-300">Pacienti</a>
             <a href="sporocila.html" class="hover:text-green-300">Sporočila</a>
-            <a href="#" class="hover:text-green-300">Kontakt</a>
-            <a href="nastavitve.html" class="hover:text-green-300">Profil</a>
+            <a href="#" class="hover:text-green-300">Pomoč</a>
         </div>
         <div class="text-right">
-            <p class="font-bold">Klinika Naslov</p>
-            <p class="text-gray-300">Klinika Zdraviteto Življenja</p>
+            <p class="font-bold">Tehnična podpora</p>
+            <p class="text-gray-300">podpora@futuristiclife.si</p>
         </div>
     </footer>
 
