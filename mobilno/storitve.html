@@ -79,7 +79,7 @@
     <div class="phone-mockup">
         <div class="notch"></div>
 
-        <div class="phone-content relative bg-[#f0fdf4] pb-24">
+        <div class="phone-content relative bg-[#f0fdf4] dark:bg-gray-900 pb-24">
 
             <!-- Status Bar Placeholder -->
             <div class="h-10 px-6 flex justify-between items-end pb-1 text-xs font-medium z-40 relative text-[#114232]">
@@ -95,26 +95,26 @@
 
 <!-- Custom Header for subpage -->
 <div class="px-4 pt-2 pb-4 flex items-center relative">
-    <a href="domov.html" class="w-10 h-10 flex items-center justify-center text-[#114232] z-10 absolute left-4">
+    <a href="domov.html" class="w-10 h-10 flex items-center justify-center text-[#114232] z-10 absolute left-4 transform transition-all duration-300 hover:-translate-y-0.5">
         <i class="fas fa-chevron-left text-xl"></i>
     </a>
     <h1 class="w-full text-center font-bold text-[#114232] text-lg">Storitve</h1>
 </div>
 
 <div class="px-6 pb-6">
-    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden mb-6">
+    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden mb-6">
         <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Zdravje" class="w-full h-48 object-cover">
 
         <div class="p-5">
-            <h2 class="text-xl font-bold mb-3 text-gray-900">Zdravstvena informacija</h2>
-            <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+            <h2 class="text-xl font-bold mb-3 text-gray-900 dark:text-gray-100">Zdravstvena informacija</h2>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
                 Medicina za dolgoživost. Diagnosticiramo in preprečujemo tveganja z uporabo najnaprednejših metod za optimalno kvaliteto življenja.
             </p>
-            <p class="text-sm text-gray-600 mb-6 leading-relaxed">
+            <p class="text-sm text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
                 Ponujamo celostne storitve: splošni pregledi, genetski testi, napredna diagnostika in personalizirani načrti za zdravje.
             </p>
 
-            <a href="narocanje.html" class="block w-full bg-[#114232] text-white text-center py-3.5 rounded-full font-bold shadow-md">Naroči se zdaj</a>
+            <a href="narocanje.html" class="block w-full bg-[#114232] text-white text-center py-3.5 rounded-full font-bold shadow-md transform transition-all duration-300 hover:-translate-y-0.5">Naroči se zdaj</a>
         </div>
     </div>
 </div>
@@ -124,30 +124,41 @@
 
 
         <!-- Bottom Navigation -->
-        <div class="absolute bottom-0 w-full bg-white border-t border-gray-200 px-6 py-2 bottom-nav-safe flex justify-between rounded-b-[28px] z-40">
+    <nav class="absolute bottom-0 w-full bg-white dark:bg-gray-800 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 dark:border-gray-800 pb-5 pt-3 px-2 z-40 transition-colors duration-300">
+        <div class="flex justify-between items-center">
 
-        <a href="domov.html" class="flex flex-col items-center justify-center w-full text-[#114232]">
-            <i class="fas fa-home text-xl mb-1"></i>
-            <span class="text-[10px]">Domov</span>
-        </a>
+            <a href="domov.html" class="flex flex-col items-center space-y-1 text-gray-400 hover:text-[#114232] dark:hover:text-green-400 transition-all duration-300 transform hover:-translate-y-1 w-1/6 transform transition-all duration-300 hover:-translate-y-0.5">
+                <i class="fas fa-home text-lg"></i>
+                <span class="text-[9px] font-medium truncate w-full text-center">Domov</span>
+            </a>
 
-        <a href="narocanje.html" class="flex flex-col items-center justify-center w-full text-gray-400">
-            <i class="far fa-calendar-alt text-xl mb-1"></i>
-            <span class="text-[10px]">Naročanje</span>
-        </a>
+            <a href="narocanje.html" class="flex flex-col items-center space-y-1 text-gray-400 hover:text-[#114232] dark:hover:text-green-400 transition-all duration-300 transform hover:-translate-y-1 w-1/6 transform transition-all duration-300 hover:-translate-y-0.5">
+                <i class="far fa-calendar-alt text-lg"></i>
+                <span class="text-[9px] font-medium truncate w-full text-center">Naročanje</span>
+            </a>
 
-        <a href="sporocila.html" class="flex flex-col items-center justify-center w-full text-gray-400">
-            <i class="far fa-envelope text-xl mb-1"></i>
-            <span class="text-[10px]">Sporočila</span>
-        </a>
+            <a href="napredek.html" class="flex flex-col items-center space-y-1 text-gray-400 hover:text-[#114232] dark:hover:text-green-400 transition-all duration-300 transform hover:-translate-y-1 w-1/6 transform transition-all duration-300 hover:-translate-y-0.5">
+                <i class="fas fa-tasks text-lg"></i>
+                <span class="text-[9px] font-medium truncate w-full text-center">Napredek</span>
+            </a>
 
-        <a href="nastavitve.html" class="flex flex-col items-center justify-center w-full text-gray-400">
-            <i class="fas fa-cog text-xl mb-1"></i>
-            <span class="text-[10px]">Nastavitve</span>
-        </a>
+            <a href="telemedicina.html" class="flex flex-col items-center space-y-1 text-gray-400 hover:text-[#114232] dark:hover:text-green-400 transition-all duration-300 transform hover:-translate-y-1 w-1/6 transform transition-all duration-300 hover:-translate-y-0.5">
+                <i class="fas fa-video text-lg"></i>
+                <span class="text-[9px] font-medium truncate w-full text-center">Video</span>
+            </a>
+
+            <a href="sporocila.html" class="flex flex-col items-center space-y-1 text-gray-400 hover:text-[#114232] dark:hover:text-green-400 transition-all duration-300 transform hover:-translate-y-1 w-1/6 transform transition-all duration-300 hover:-translate-y-0.5">
+                <i class="far fa-envelope text-lg"></i>
+                <span class="text-[9px] font-medium truncate w-full text-center">Sporočila</span>
+            </a>
+
+            <a href="nastavitve.html" class="flex flex-col items-center space-y-1 text-gray-400 hover:text-[#114232] dark:hover:text-green-400 transition-all duration-300 transform hover:-translate-y-1 w-1/6 transform transition-all duration-300 hover:-translate-y-0.5">
+                <i class="fas fa-cog text-lg"></i>
+                <span class="text-[9px] font-medium truncate w-full text-center">Nastavitve</span>
+            </a>
 
         </div>
-
+    </nav>
     </div>
 </body>
 </html>

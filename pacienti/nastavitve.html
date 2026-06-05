@@ -14,8 +14,8 @@
         }
     </style>
 </head>
-<body class="p-4 md:p-8 min-h-screen">
-    <div class="max-w-7xl mx-auto bg-[#eaf4ec] rounded-xl shadow-lg pb-1 overflow-hidden border border-green-100">
+<body class="dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300 p-4 md:p-8 min-h-screen">
+    <div class="max-w-7xl mx-auto bg-[#eaf4ec] dark:bg-gray-800 dark:border-gray-700 rounded-xl shadow-lg pb-1 overflow-hidden border border-green-100">
         <div class="p-2 bg-[#114232] flex gap-2">
            <div class="w-3 h-3 rounded-full bg-red-500"></div>
 <div class="mt-6"></div>
@@ -26,69 +26,77 @@
     <div class="flex flex-col md:flex-row px-6 gap-6">
 
     <!-- Sidebar -->
-    <aside class="w-64 bg-white rounded-xl shadow-sm overflow-hidden flex-shrink-0 h-fit">
+    <aside class="w-64 bg-white dark:bg-gray-800 rounded-xl shadow-sm overflow-hidden flex-shrink-0 h-fit">
 
         <!-- Logo Widget -->
-        <div class="px-6 py-6 border-b border-gray-100 flex justify-center">
+        <div class="px-6 py-6 border-b border-gray-100 dark:border-gray-700 flex justify-center">
             <img src="logo.svg" alt="Futuristic Life Logo" class="h-12 w-auto object-contain">
         </div>
 
-<nav class="flex flex-col py-2">
+<nav class="flex flex-col py-2 space-y-1">
 
-        <a href="index.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 transition-colors">
+        <a href="index.html" class="flex items-center px-4 py-3 text-gray-600 dark:text-gray-300 hover:bg-green-50 hover:text-[#114232] rounded-lg transition-all duration-300 dark:text-gray-300 dark:hover:bg-gray-800 transform transition-all duration-300 hover:-translate-y-0.5">
             <i class="fas fa-home w-6"></i>
             <span>Domov</span>
         </a>
 
-        <a href="profil.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 transition-colors">
+        <a href="profil.html" class="flex items-center px-4 py-3 text-gray-600 dark:text-gray-300 hover:bg-green-50 hover:text-[#114232] rounded-lg transition-all duration-300 dark:text-gray-300 dark:hover:bg-gray-800 transform transition-all duration-300 hover:-translate-y-0.5">
             <i class="far fa-user w-6"></i>
             <span>Profil</span>
         </a>
 
-        <a href="narocanje.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 transition-colors">
+        <a href="narocanje.html" class="flex items-center px-4 py-3 text-gray-600 dark:text-gray-300 hover:bg-green-50 hover:text-[#114232] rounded-lg transition-all duration-300 dark:text-gray-300 dark:hover:bg-gray-800 transform transition-all duration-300 hover:-translate-y-0.5">
             <i class="far fa-calendar-alt w-6"></i>
             <span>Naročanje</span>
         </a>
 
-        <a href="rezultati.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 transition-colors">
+        <a href="napredek.html" class="flex items-center px-4 py-3 text-gray-600 dark:text-gray-300 hover:bg-green-50 hover:text-[#114232] rounded-lg transition-all duration-300 dark:text-gray-300 dark:hover:bg-gray-800 transform transition-all duration-300 hover:-translate-y-0.5">
+            <i class="fas fa-tasks w-6"></i>
+            <span>Napredek Diagnostike</span>
+        </a>
+
+        <a href="rezultati.html" class="flex items-center px-4 py-3 text-gray-600 dark:text-gray-300 hover:bg-green-50 hover:text-[#114232] rounded-lg transition-all duration-300 dark:text-gray-300 dark:hover:bg-gray-800 transform transition-all duration-300 hover:-translate-y-0.5">
             <i class="fas fa-clipboard-list w-6"></i>
             <span>Moji Rezultati</span>
         </a>
 
-        <a href="storitve.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 transition-colors">
+        <a href="storitve.html" class="flex items-center px-4 py-3 text-gray-600 dark:text-gray-300 hover:bg-green-50 hover:text-[#114232] rounded-lg transition-all duration-300 dark:text-gray-300 dark:hover:bg-gray-800 transform transition-all duration-300 hover:-translate-y-0.5">
             <i class="fas fa-stethoscope w-6"></i>
             <span>Storitve</span>
         </a>
 
-        <a href="sporocila.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 transition-colors">
+        <a href="zdravila.html" class="flex items-center px-4 py-3 text-gray-600 dark:text-gray-300 hover:bg-green-50 hover:text-[#114232] rounded-lg transition-all duration-300 dark:text-gray-300 dark:hover:bg-gray-800 transform transition-all duration-300 hover:-translate-y-0.5">
+            <i class="fas fa-pills w-6"></i>
+            <span>Zdravila</span>
+        </a>
+
+        <a href="placila.html" class="flex items-center px-4 py-3 text-gray-600 dark:text-gray-300 hover:bg-green-50 hover:text-[#114232] rounded-lg transition-all duration-300 dark:text-gray-300 dark:hover:bg-gray-800 transform transition-all duration-300 hover:-translate-y-0.5">
+            <i class="fas fa-file-invoice-dollar w-6"></i>
+            <span>Plačila in Računi</span>
+        </a>
+
+        <a href="dnevnik.html" class="flex items-center px-4 py-3 text-gray-600 dark:text-gray-300 hover:bg-green-50 hover:text-[#114232] rounded-lg transition-all duration-300 dark:text-gray-300 dark:hover:bg-gray-800 transform transition-all duration-300 hover:-translate-y-0.5">
+            <i class="fas fa-heartbeat w-6"></i>
+            <span>Dnevnik zdravja</span>
+        </a>
+
+        <a href="sporocila.html" class="flex items-center px-4 py-3 text-gray-600 dark:text-gray-300 hover:bg-green-50 hover:text-[#114232] rounded-lg transition-all duration-300 dark:text-gray-300 dark:hover:bg-gray-800 transform transition-all duration-300 hover:-translate-y-0.5">
             <i class="far fa-envelope w-6"></i>
             <span>Sporočila</span>
         </a>
 
-        <a href="nastavitve.html" class="flex items-center px-4 py-3 bg-[#e8f5e9] text-[#114232] font-semibold border-l-4 border-[#114232] transition-colors">
+        <a href="nastavitve.html" class="flex items-center px-4 py-3 bg-[#e8f5e9] text-[#114232] font-semibold border-l-4 border-[#114232] hover:bg-green-50 hover:text-[#114232] rounded-lg transition-all duration-300 dark:text-gray-300 dark:hover:bg-gray-800 mt-4 border-t border-gray-100 dark:border-gray-700 dark:border-gray-700 transform transition-all duration-300 hover:-translate-y-0.5">
             <i class="fas fa-cog w-6"></i>
             <span>Nastavitve</span>
         </a>
 
-
-        <!-- User Profile Widget -->
-        <div class="px-4 py-4 border-t border-gray-100 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Janez Novak" class="w-10 h-10 rounded-full">
-                <div>
-                    <span class="text-sm font-bold text-gray-800 block">Janez Novak</span>
-                    <a href="profil.html" class="text-xs text-gray-500 hover:text-[#114232]">Poglej profil</a>
-                </div>
-            </div>
-        </div>
-
-</nav>
+    </nav>
     </aside>
 
 
             <main class="flex-1">
 
-<div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+<div class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-sm border border-gray-100 dark:border-gray-700">
     <h2 class="text-2xl font-bold mb-6 text-[#114232]">Nastavitve</h2>
 
     <div class="space-y-8">
@@ -117,9 +125,9 @@
         <div>
             <h3 class="text-lg font-semibold mb-4 border-b pb-2">Varnost in zasebnost</h3>
             <div class="space-y-4">
-                <button class="text-[#114232] font-medium hover:underline block">Spremeni geslo</button>
-                <button class="text-[#114232] font-medium hover:underline block">Nastavitve dvostopenjske avtentikacije (2FA)</button>
-                <button class="text-[#114232] font-medium hover:underline block">Upravljanje z mojimi osebnimi podatki (GDPR)</button>
+                <button aria-label="Button" class="text-[#114232] font-medium hover:underline block transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#114232] focus:ring-opacity-50">Spremeni geslo</button>
+                <button aria-label="Button" class="text-[#114232] font-medium hover:underline block transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#114232] focus:ring-opacity-50">Nastavitve dvostopenjske avtentikacije (2FA)</button>
+                <button aria-label="Button" class="text-[#114232] font-medium hover:underline block transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#114232] focus:ring-opacity-50">Upravljanje z mojimi osebnimi podatki (GDPR)</button>
             </div>
         </div>
 
@@ -135,7 +143,7 @@
         </div>
 
         <div class="pt-4">
-            <button class="bg-[#114232] text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition">Shrani nastavitve</button>
+            <button aria-label="Button" class="bg-[#114232] text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#114232] focus:ring-opacity-50">Shrani nastavitve</button>
         </div>
     </div>
 </div>
@@ -150,11 +158,11 @@
             <p class="text-gray-300">dr. Ariana Vetrovec</p>
         </div>
         <div class="space-x-4">
-            <a href="narocanje.html" class="hover:text-green-300">Naročanje</a>
-            <a href="#" class="hover:text-green-300">Pravno</a>
-            <a href="sporocila.html" class="hover:text-green-300">Sporočila</a>
-            <a href="#" class="hover:text-green-300">Kontakt</a>
-            <a href="profil.html" class="hover:text-green-300">Profil</a>
+            <a href="narocanje.html" class="hover:text-green-300 transform transition-all duration-300 hover:-translate-y-0.5">Naročanje</a>
+            <a href="#" class="hover:text-green-300 transform transition-all duration-300 hover:-translate-y-0.5">Pravno</a>
+            <a href="sporocila.html" class="hover:text-green-300 transform transition-all duration-300 hover:-translate-y-0.5">Sporočila</a>
+            <a href="#" class="hover:text-green-300 transform transition-all duration-300 hover:-translate-y-0.5">Kontakt</a>
+            <a href="profil.html" class="hover:text-green-300 transform transition-all duration-300 hover:-translate-y-0.5">Profil</a>
         </div>
         <div class="text-right">
             <p class="font-bold">Klinika Naslov</p>

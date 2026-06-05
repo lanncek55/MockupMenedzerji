@@ -14,8 +14,8 @@
         }
     </style>
 </head>
-<body class="p-4 md:p-8 min-h-screen">
-    <div class="max-w-7xl mx-auto bg-[#eaf4ec] rounded-xl shadow-lg pb-1 overflow-hidden border border-green-100">
+<body class="dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300 p-4 md:p-8 min-h-screen">
+    <div class="max-w-7xl mx-auto bg-[#eaf4ec] dark:bg-gray-800 dark:border-gray-700 rounded-xl shadow-lg pb-1 overflow-hidden border border-green-100">
         <div class="p-2 bg-[#114232] flex gap-2">
            <div class="w-3 h-3 rounded-full bg-red-500"></div>
 <div class="mt-6"></div>
@@ -26,71 +26,79 @@
     <div class="flex flex-col md:flex-row px-6 gap-6">
 
     <!-- Sidebar -->
-    <aside class="w-64 bg-white rounded-xl shadow-sm overflow-hidden flex-shrink-0 h-fit">
+    <aside class="w-64 bg-white dark:bg-gray-800 rounded-xl shadow-sm overflow-hidden flex-shrink-0 h-fit">
 
         <!-- Logo Widget -->
-        <div class="px-6 py-6 border-b border-gray-100 flex justify-center">
+        <div class="px-6 py-6 border-b border-gray-100 dark:border-gray-700 flex justify-center">
             <img src="logo.svg" alt="Futuristic Life Logo" class="h-12 w-auto object-contain">
         </div>
 
-<nav class="flex flex-col py-2">
+<nav class="flex flex-col py-2 space-y-1">
 
-        <a href="index.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 transition-colors">
+        <a href="index.html" class="flex items-center px-4 py-3 text-gray-600 dark:text-gray-300 hover:bg-green-50 hover:text-[#114232] rounded-lg transition-all duration-300 dark:text-gray-300 dark:hover:bg-gray-800 transform transition-all duration-300 hover:-translate-y-0.5">
             <i class="fas fa-home w-6"></i>
             <span>Domov</span>
         </a>
 
-        <a href="profil.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 transition-colors">
+        <a href="profil.html" class="flex items-center px-4 py-3 text-gray-600 dark:text-gray-300 hover:bg-green-50 hover:text-[#114232] rounded-lg transition-all duration-300 dark:text-gray-300 dark:hover:bg-gray-800 transform transition-all duration-300 hover:-translate-y-0.5">
             <i class="far fa-user w-6"></i>
             <span>Profil</span>
         </a>
 
-        <a href="narocanje.html" class="flex items-center px-4 py-3 bg-[#e8f5e9] text-[#114232] font-semibold border-l-4 border-[#114232] transition-colors">
+        <a href="narocanje.html" class="flex items-center px-4 py-3 bg-[#e8f5e9] text-[#114232] font-semibold border-l-4 border-[#114232] hover:bg-green-50 hover:text-[#114232] rounded-lg transition-all duration-300 dark:text-gray-300 dark:hover:bg-gray-800 transform transition-all duration-300 hover:-translate-y-0.5">
             <i class="far fa-calendar-alt w-6"></i>
             <span>Naročanje</span>
         </a>
 
-        <a href="rezultati.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 transition-colors">
+        <a href="napredek.html" class="flex items-center px-4 py-3 text-gray-600 dark:text-gray-300 hover:bg-green-50 hover:text-[#114232] rounded-lg transition-all duration-300 dark:text-gray-300 dark:hover:bg-gray-800 transform transition-all duration-300 hover:-translate-y-0.5">
+            <i class="fas fa-tasks w-6"></i>
+            <span>Napredek Diagnostike</span>
+        </a>
+
+        <a href="rezultati.html" class="flex items-center px-4 py-3 text-gray-600 dark:text-gray-300 hover:bg-green-50 hover:text-[#114232] rounded-lg transition-all duration-300 dark:text-gray-300 dark:hover:bg-gray-800 transform transition-all duration-300 hover:-translate-y-0.5">
             <i class="fas fa-clipboard-list w-6"></i>
             <span>Moji Rezultati</span>
         </a>
 
-        <a href="storitve.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 transition-colors">
+        <a href="storitve.html" class="flex items-center px-4 py-3 text-gray-600 dark:text-gray-300 hover:bg-green-50 hover:text-[#114232] rounded-lg transition-all duration-300 dark:text-gray-300 dark:hover:bg-gray-800 transform transition-all duration-300 hover:-translate-y-0.5">
             <i class="fas fa-stethoscope w-6"></i>
             <span>Storitve</span>
         </a>
 
-        <a href="sporocila.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 transition-colors">
+        <a href="zdravila.html" class="flex items-center px-4 py-3 text-gray-600 dark:text-gray-300 hover:bg-green-50 hover:text-[#114232] rounded-lg transition-all duration-300 dark:text-gray-300 dark:hover:bg-gray-800 transform transition-all duration-300 hover:-translate-y-0.5">
+            <i class="fas fa-pills w-6"></i>
+            <span>Zdravila</span>
+        </a>
+
+        <a href="placila.html" class="flex items-center px-4 py-3 text-gray-600 dark:text-gray-300 hover:bg-green-50 hover:text-[#114232] rounded-lg transition-all duration-300 dark:text-gray-300 dark:hover:bg-gray-800 transform transition-all duration-300 hover:-translate-y-0.5">
+            <i class="fas fa-file-invoice-dollar w-6"></i>
+            <span>Plačila in Računi</span>
+        </a>
+
+        <a href="dnevnik.html" class="flex items-center px-4 py-3 text-gray-600 dark:text-gray-300 hover:bg-green-50 hover:text-[#114232] rounded-lg transition-all duration-300 dark:text-gray-300 dark:hover:bg-gray-800 transform transition-all duration-300 hover:-translate-y-0.5">
+            <i class="fas fa-heartbeat w-6"></i>
+            <span>Dnevnik zdravja</span>
+        </a>
+
+        <a href="sporocila.html" class="flex items-center px-4 py-3 text-gray-600 dark:text-gray-300 hover:bg-green-50 hover:text-[#114232] rounded-lg transition-all duration-300 dark:text-gray-300 dark:hover:bg-gray-800 transform transition-all duration-300 hover:-translate-y-0.5">
             <i class="far fa-envelope w-6"></i>
             <span>Sporočila</span>
         </a>
 
-        <a href="nastavitve.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 transition-colors">
+        <a href="nastavitve.html" class="flex items-center px-4 py-3 text-gray-600 dark:text-gray-300 hover:bg-green-50 hover:text-[#114232] rounded-lg transition-all duration-300 dark:text-gray-300 dark:hover:bg-gray-800 mt-4 border-t border-gray-100 dark:border-gray-700 dark:border-gray-700 transform transition-all duration-300 hover:-translate-y-0.5">
             <i class="fas fa-cog w-6"></i>
             <span>Nastavitve</span>
         </a>
 
-
-        <!-- User Profile Widget -->
-        <div class="px-4 py-4 border-t border-gray-100 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Janez Novak" class="w-10 h-10 rounded-full">
-                <div>
-                    <span class="text-sm font-bold text-gray-800 block">Janez Novak</span>
-                    <a href="profil.html" class="text-xs text-gray-500 hover:text-[#114232]">Poglej profil</a>
-                </div>
-            </div>
-        </div>
-
-</nav>
+    </nav>
     </aside>
 
 
             <main class="flex-1">
 
-<div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+<div class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-sm border border-gray-100 dark:border-gray-700">
     <h2 class="text-2xl font-bold mb-6 text-[#114232]">Naročanje na pregled</h2>
-    <p class="text-gray-600 mb-8">Izberite vrsto pregleda in želen termin v koledarju.</p>
+    <p class="text-gray-600 dark:text-gray-300 mb-8">Izberite vrsto pregleda in želen termin v koledarju.</p>
 
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
@@ -98,7 +106,7 @@
         <div class="lg:col-span-1 space-y-6">
             <div>
                 <label class="block text-sm font-medium text-gray-700 mb-2">Vrsta storitve</label>
-                <select class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-[#114232] bg-white">
+                <select class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-[#114232] bg-white dark:bg-gray-800">
                     <option>Splošni pregled</option>
                     <option>Posvet za dolgoživost</option>
                     <option>Genetsko testiranje</option>
@@ -108,7 +116,7 @@
 
             <div>
                 <label class="block text-sm font-medium text-gray-700 mb-2">Izbira zdravnika (opcijsko)</label>
-                <select class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-[#114232] bg-white">
+                <select class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-[#114232] bg-white dark:bg-gray-800">
                     <option>Katerikoli prosti zdravnik</option>
                     <option>Dr. Ariana Vetrovec</option>
                     <option>Dr. Marko Horvat</option>
@@ -117,7 +125,7 @@
 
             <div>
                 <label class="block text-sm font-medium text-gray-700 mb-2">Izbran datum in čas</label>
-                <div class="p-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-600 flex items-center justify-between">
+                <div class="p-3 bg-gray-50 dark:bg-gray-900 border border-gray-300 rounded-lg text-gray-600 dark:text-gray-300 flex items-center justify-between">
                     <span>15. Maj 2024</span>
                     <span class="font-semibold text-[#114232]">09:00</span>
                 </div>
@@ -128,28 +136,28 @@
                 <textarea rows="4" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-[#114232]" placeholder="Kratko opišite vaše težave ali želje..."></textarea>
             </div>
 
-            <button class="bg-[#114232] text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition font-medium w-full">Potrdi rezervacijo</button>
+            <button aria-label="Button" class="bg-[#114232] text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition font-medium w-full transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#114232] focus:ring-opacity-50">Potrdi rezervacijo</button>
         </div>
 
         <!-- Interactive Calendar (Right Side) -->
-        <div class="lg:col-span-2 bg-gray-50 p-6 rounded-xl border border-gray-200">
+        <div class="lg:col-span-2 bg-gray-50 dark:bg-gray-900 p-6 rounded-xl border border-gray-200 dark:border-gray-700">
             <div class="flex justify-between items-center mb-4">
-                <h3 class="text-lg font-semibold text-gray-800">Maj 2024</h3>
+                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Maj 2024</h3>
                 <div class="flex space-x-2">
-                    <button class="w-8 h-8 rounded-full bg-white border border-gray-300 flex items-center justify-center hover:bg-gray-100"><i class="fas fa-chevron-left text-xs"></i></button>
-                    <button class="w-8 h-8 rounded-full bg-white border border-gray-300 flex items-center justify-center hover:bg-gray-100"><i class="fas fa-chevron-right text-xs"></i></button>
+                    <button aria-label="Button" class="w-8 h-8 rounded-full bg-white dark:bg-gray-800 border border-gray-300 flex items-center justify-center hover:bg-gray-100 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#114232] focus:ring-opacity-50"><i class="fas fa-chevron-left text-xs"></i></button>
+                    <button aria-label="Button" class="w-8 h-8 rounded-full bg-white dark:bg-gray-800 border border-gray-300 flex items-center justify-center hover:bg-gray-100 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#114232] focus:ring-opacity-50"><i class="fas fa-chevron-right text-xs"></i></button>
                 </div>
             </div>
 
             <!-- Days of week -->
             <div class="grid grid-cols-7 gap-1 text-center mb-2">
-                <div class="text-xs font-semibold text-gray-500 uppercase">Pon</div>
-                <div class="text-xs font-semibold text-gray-500 uppercase">Tor</div>
-                <div class="text-xs font-semibold text-gray-500 uppercase">Sre</div>
-                <div class="text-xs font-semibold text-gray-500 uppercase">Čet</div>
-                <div class="text-xs font-semibold text-gray-500 uppercase">Pet</div>
-                <div class="text-xs font-semibold text-gray-500 uppercase">Sob</div>
-                <div class="text-xs font-semibold text-gray-500 uppercase">Ned</div>
+                <div class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase">Pon</div>
+                <div class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase">Tor</div>
+                <div class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase">Sre</div>
+                <div class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase">Čet</div>
+                <div class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase">Pet</div>
+                <div class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase">Sob</div>
+                <div class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase">Ned</div>
             </div>
 
             <!-- Calendar Grid -->
@@ -159,61 +167,61 @@
                 <div class="h-10 md:h-12 bg-transparent"></div>
 
                 <!-- Days -->
-                <div class="h-10 md:h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center text-sm cursor-not-allowed text-gray-300">1</div>
-                <div class="h-10 md:h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center text-sm cursor-not-allowed text-gray-300">2</div>
-                <div class="h-10 md:h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center text-sm cursor-not-allowed text-gray-300">3</div>
-                <div class="h-10 md:h-12 bg-gray-100 border border-gray-200 rounded-lg flex items-center justify-center text-sm cursor-not-allowed text-gray-400">4</div>
-                <div class="h-10 md:h-12 bg-gray-100 border border-gray-200 rounded-lg flex items-center justify-center text-sm cursor-not-allowed text-gray-400">5</div>
+                <div class="h-10 md:h-12 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm cursor-not-allowed text-gray-300">1</div>
+                <div class="h-10 md:h-12 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm cursor-not-allowed text-gray-300">2</div>
+                <div class="h-10 md:h-12 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm cursor-not-allowed text-gray-300">3</div>
+                <div class="h-10 md:h-12 bg-gray-100 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm cursor-not-allowed text-gray-400">4</div>
+                <div class="h-10 md:h-12 bg-gray-100 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm cursor-not-allowed text-gray-400">5</div>
 
-                <div class="h-10 md:h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium">6</div>
-                <div class="h-10 md:h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium">7</div>
-                <div class="h-10 md:h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium">8</div>
-                <div class="h-10 md:h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium">9</div>
-                <div class="h-10 md:h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium">10</div>
-                <div class="h-10 md:h-12 bg-gray-100 border border-gray-200 rounded-lg flex items-center justify-center text-sm cursor-not-allowed text-gray-400">11</div>
-                <div class="h-10 md:h-12 bg-gray-100 border border-gray-200 rounded-lg flex items-center justify-center text-sm cursor-not-allowed text-gray-400">12</div>
+                <div class="h-10 md:h-12 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium">6</div>
+                <div class="h-10 md:h-12 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium">7</div>
+                <div class="h-10 md:h-12 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium">8</div>
+                <div class="h-10 md:h-12 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium">9</div>
+                <div class="h-10 md:h-12 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium">10</div>
+                <div class="h-10 md:h-12 bg-gray-100 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm cursor-not-allowed text-gray-400">11</div>
+                <div class="h-10 md:h-12 bg-gray-100 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm cursor-not-allowed text-gray-400">12</div>
 
-                <div class="h-10 md:h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium relative">
+                <div class="h-10 md:h-12 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium relative">
                     13
                     <div class="absolute bottom-1 w-1 h-1 rounded-full bg-red-400"></div>
                 </div>
-                <div class="h-10 md:h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium">14</div>
+                <div class="h-10 md:h-12 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium">14</div>
                 <div class="h-10 md:h-12 bg-[#114232] text-white border border-[#114232] rounded-lg flex items-center justify-center text-sm cursor-pointer font-bold shadow-md">15</div>
-                <div class="h-10 md:h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium relative">
+                <div class="h-10 md:h-12 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium relative">
                     16
                     <div class="absolute bottom-1 w-1 h-1 rounded-full bg-yellow-400"></div>
                 </div>
-                <div class="h-10 md:h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium">17</div>
-                <div class="h-10 md:h-12 bg-gray-100 border border-gray-200 rounded-lg flex items-center justify-center text-sm cursor-not-allowed text-gray-400">18</div>
-                <div class="h-10 md:h-12 bg-gray-100 border border-gray-200 rounded-lg flex items-center justify-center text-sm cursor-not-allowed text-gray-400">19</div>
+                <div class="h-10 md:h-12 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium">17</div>
+                <div class="h-10 md:h-12 bg-gray-100 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm cursor-not-allowed text-gray-400">18</div>
+                <div class="h-10 md:h-12 bg-gray-100 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm cursor-not-allowed text-gray-400">19</div>
 
                 <!-- More days... simplified for mockup -->
-                <div class="h-10 md:h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium">20</div>
-                <div class="h-10 md:h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium">21</div>
-                <div class="h-10 md:h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium">22</div>
-                <div class="h-10 md:h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium">23</div>
-                <div class="h-10 md:h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium">24</div>
-                <div class="h-10 md:h-12 bg-gray-100 border border-gray-200 rounded-lg flex items-center justify-center text-sm cursor-not-allowed text-gray-400">25</div>
-                <div class="h-10 md:h-12 bg-gray-100 border border-gray-200 rounded-lg flex items-center justify-center text-sm cursor-not-allowed text-gray-400">26</div>
+                <div class="h-10 md:h-12 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium">20</div>
+                <div class="h-10 md:h-12 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium">21</div>
+                <div class="h-10 md:h-12 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium">22</div>
+                <div class="h-10 md:h-12 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium">23</div>
+                <div class="h-10 md:h-12 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm cursor-pointer hover:border-[#114232] hover:text-[#114232] font-medium">24</div>
+                <div class="h-10 md:h-12 bg-gray-100 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm cursor-not-allowed text-gray-400">25</div>
+                <div class="h-10 md:h-12 bg-gray-100 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center text-sm cursor-not-allowed text-gray-400">26</div>
 
             </div>
 
             <!-- Available Time Slots -->
-            <div class="mt-4 border-t border-gray-200 pt-4">
-                <h4 class="text-sm font-semibold text-gray-800 mb-3">Razpoložljivi termini za 15. Maj</h4>
+            <div class="mt-4 border-t border-gray-200 dark:border-gray-700 pt-4">
+                <h4 class="text-sm font-semibold text-gray-800 dark:text-gray-100 mb-3">Razpoložljivi termini za 15. Maj</h4>
                 <div class="grid grid-cols-3 md:grid-cols-4 gap-2">
-                    <button class="py-2 border-2 border-[#114232] bg-[#114232] text-white rounded-md text-sm font-medium">09:00</button>
-                    <button class="py-2 border border-gray-300 bg-white hover:border-[#114232] hover:text-[#114232] rounded-md text-sm font-medium transition">09:30</button>
-                    <button class="py-2 border border-gray-300 bg-white hover:border-[#114232] hover:text-[#114232] rounded-md text-sm font-medium transition">10:00</button>
-                    <button class="py-2 border border-gray-200 bg-gray-100 text-gray-400 cursor-not-allowed rounded-md text-sm font-medium line-through">10:30</button>
-                    <button class="py-2 border border-gray-300 bg-white hover:border-[#114232] hover:text-[#114232] rounded-md text-sm font-medium transition">11:00</button>
-                    <button class="py-2 border border-gray-300 bg-white hover:border-[#114232] hover:text-[#114232] rounded-md text-sm font-medium transition">13:30</button>
-                    <button class="py-2 border border-gray-300 bg-white hover:border-[#114232] hover:text-[#114232] rounded-md text-sm font-medium transition">14:00</button>
-                    <button class="py-2 border border-gray-300 bg-white hover:border-[#114232] hover:text-[#114232] rounded-md text-sm font-medium transition">15:00</button>
+                    <button aria-label="Button" class="py-2 border-2 border-[#114232] bg-[#114232] text-white rounded-md text-sm font-medium transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#114232] focus:ring-opacity-50">09:00</button>
+                    <button aria-label="Button" class="py-2 border border-gray-300 bg-white dark:bg-gray-800 hover:border-[#114232] hover:text-[#114232] rounded-md text-sm font-medium transition transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#114232] focus:ring-opacity-50">09:30</button>
+                    <button aria-label="Button" class="py-2 border border-gray-300 bg-white dark:bg-gray-800 hover:border-[#114232] hover:text-[#114232] rounded-md text-sm font-medium transition transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#114232] focus:ring-opacity-50">10:00</button>
+                    <button aria-label="Button" class="py-2 border border-gray-200 dark:border-gray-700 bg-gray-100 text-gray-400 cursor-not-allowed rounded-md text-sm font-medium line-through transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#114232] focus:ring-opacity-50">10:30</button>
+                    <button aria-label="Button" class="py-2 border border-gray-300 bg-white dark:bg-gray-800 hover:border-[#114232] hover:text-[#114232] rounded-md text-sm font-medium transition transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#114232] focus:ring-opacity-50">11:00</button>
+                    <button aria-label="Button" class="py-2 border border-gray-300 bg-white dark:bg-gray-800 hover:border-[#114232] hover:text-[#114232] rounded-md text-sm font-medium transition transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#114232] focus:ring-opacity-50">13:30</button>
+                    <button aria-label="Button" class="py-2 border border-gray-300 bg-white dark:bg-gray-800 hover:border-[#114232] hover:text-[#114232] rounded-md text-sm font-medium transition transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#114232] focus:ring-opacity-50">14:00</button>
+                    <button aria-label="Button" class="py-2 border border-gray-300 bg-white dark:bg-gray-800 hover:border-[#114232] hover:text-[#114232] rounded-md text-sm font-medium transition transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#114232] focus:ring-opacity-50">15:00</button>
                 </div>
             </div>
 
-            <div class="mt-4 flex items-center space-x-4 text-xs text-gray-500">
+            <div class="mt-4 flex items-center space-x-4 text-xs text-gray-500 dark:text-gray-400">
                 <div class="flex items-center"><div class="w-2 h-2 rounded-full bg-red-400 mr-1"></div> Skoraj polno</div>
                 <div class="flex items-center"><div class="w-2 h-2 rounded-full bg-yellow-400 mr-1"></div> Srednje zasedeno</div>
             </div>
@@ -232,11 +240,11 @@
             <p class="text-gray-300">dr. Ariana Vetrovec</p>
         </div>
         <div class="space-x-4">
-            <a href="narocanje.html" class="hover:text-green-300">Naročanje</a>
-            <a href="#" class="hover:text-green-300">Pravno</a>
-            <a href="sporocila.html" class="hover:text-green-300">Sporočila</a>
-            <a href="#" class="hover:text-green-300">Kontakt</a>
-            <a href="profil.html" class="hover:text-green-300">Profil</a>
+            <a href="narocanje.html" class="hover:text-green-300 transform transition-all duration-300 hover:-translate-y-0.5">Naročanje</a>
+            <a href="#" class="hover:text-green-300 transform transition-all duration-300 hover:-translate-y-0.5">Pravno</a>
+            <a href="sporocila.html" class="hover:text-green-300 transform transition-all duration-300 hover:-translate-y-0.5">Sporočila</a>
+            <a href="#" class="hover:text-green-300 transform transition-all duration-300 hover:-translate-y-0.5">Kontakt</a>
+            <a href="profil.html" class="hover:text-green-300 transform transition-all duration-300 hover:-translate-y-0.5">Profil</a>
         </div>
         <div class="text-right">
             <p class="font-bold">Klinika Naslov</p>

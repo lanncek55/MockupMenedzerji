@@ -62,7 +62,7 @@
 <body>
     <div class="device-simulator">
         <!-- Top Status Bar (Fake) -->
-        <div class="absolute top-0 w-full h-8 flex justify-between items-end px-6 pb-1 text-xs font-semibold z-40 text-gray-800">
+        <div class="absolute top-0 w-full h-8 flex justify-between items-end px-6 pb-1 text-xs font-semibold z-40 text-gray-800 dark:text-gray-100">
             <span>9:41</span>
             <div class="flex space-x-1 items-center mb-0.5">
                 <i class="fas fa-signal text-[10px]"></i>
@@ -79,7 +79,7 @@
             <div class="flex items-center justify-center">
                 <img src="logo.svg" alt="Logo" class="h-8 w-auto object-contain">
             </div>
-            <button class="w-8 h-8 rounded-full bg-white bg-opacity-20 flex items-center justify-center">
+            <button aria-label="Button" class="w-8 h-8 rounded-full bg-white dark:bg-gray-800 bg-opacity-20 flex items-center justify-center transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#114232] focus:ring-opacity-50">
                 <i class="fas fa-bell text-sm"></i>
             </button>
         </div>
@@ -88,9 +88,9 @@
 
             <main class="px-4">
 
-<div class="bg-white rounded-2xl p-5 shadow-sm mb-6 border border-gray-100">
+<div class="bg-white dark:bg-gray-800 rounded-2xl p-5 shadow-sm mb-6 border border-gray-100 dark:border-gray-700">
     <div class="flex items-center justify-between mb-4">
-        <h2 class="text-sm font-bold text-gray-800">Celovita analiza stanja</h2>
+        <h2 class="text-sm font-bold text-gray-800 dark:text-gray-100">Celovita analiza stanja</h2>
         <span class="text-[10px] font-bold text-[#114232] bg-green-50 px-2 py-1 rounded-full">50% Končano</span>
     </div>
 
@@ -98,9 +98,9 @@
         <div class="bg-[#114232] h-1.5 rounded-full" style="width: 50%"></div>
     </div>
 
-    <div class="space-y-0 text-xs font-medium text-gray-800">
+    <div class="space-y-0 text-xs font-medium text-gray-800 dark:text-gray-100">
 
-        <div class="flex items-start justify-between py-3 border-b border-gray-100">
+        <div class="flex items-start justify-between py-3 border-b border-gray-100 dark:border-gray-700">
             <div class="flex items-start space-x-2 pr-2">
                 <span class="text-gray-400 font-normal w-3 mt-0.5">1.</span>
                 <span class="leading-snug">Izražanje genov - biološka starost</span>
@@ -108,7 +108,7 @@
             <i class="fas fa-check text-green-500 mt-0.5"></i>
         </div>
 
-        <div class="flex items-start justify-between py-3 border-b border-gray-100">
+        <div class="flex items-start justify-between py-3 border-b border-gray-100 dark:border-gray-700">
             <div class="flex items-start space-x-2 pr-2">
                 <span class="text-gray-400 font-normal w-3 mt-0.5">2.</span>
                 <span class="leading-snug">Starost možganov in riziko za demenco</span>
@@ -116,7 +116,7 @@
             <i class="fas fa-check text-green-500 mt-0.5"></i>
         </div>
 
-        <div class="flex items-start justify-between py-3 border-b border-gray-100">
+        <div class="flex items-start justify-between py-3 border-b border-gray-100 dark:border-gray-700">
             <div class="flex items-start space-x-2 pr-2">
                 <span class="text-gray-400 font-normal w-3 mt-0.5">3.</span>
                 <span class="leading-snug">Analiza stresa, bioritma ter obnove</span>
@@ -124,7 +124,7 @@
             <i class="fas fa-check text-green-500 mt-0.5"></i>
         </div>
 
-        <div class="flex items-start justify-between py-3 border-b border-gray-100">
+        <div class="flex items-start justify-between py-3 border-b border-gray-100 dark:border-gray-700">
             <div class="flex items-start space-x-2 pr-2">
                 <span class="text-gray-400 font-normal w-3 mt-0.5">4.</span>
                 <span class="leading-snug">Ocena biološke starosti: test telomerov</span>
@@ -132,15 +132,15 @@
             <i class="fas fa-check text-green-500 mt-0.5"></i>
         </div>
 
-        <div class="flex items-start justify-between py-3 border-b border-gray-100">
+        <div class="flex items-start justify-between py-3 border-b border-gray-100 dark:border-gray-700">
             <div class="flex items-start space-x-2 pr-2">
                 <span class="text-gray-400 font-normal w-3 mt-0.5">5.</span>
-                <span class="leading-snug text-gray-500">Antioksidativni status in razstrupljanje</span>
+                <span class="leading-snug text-gray-500 dark:text-gray-400">Antioksidativni status in razstrupljanje</span>
             </div>
             <i class="far fa-circle text-gray-300 mt-0.5"></i>
         </div>
 
-        <div class="flex items-start justify-between py-3 border-b border-gray-100">
+        <div class="flex items-start justify-between py-3 border-b border-gray-100 dark:border-gray-700">
             <div class="flex items-start space-x-2 pr-2">
                 <span class="text-gray-400 font-normal w-3 mt-0.5">6.</span>
                 <span class="leading-snug">Epigenetska analiza iz las</span>
@@ -148,26 +148,26 @@
             <i class="fas fa-check text-green-500 mt-0.5"></i>
         </div>
 
-        <div class="flex items-start justify-between py-3 border-b border-gray-100">
+        <div class="flex items-start justify-between py-3 border-b border-gray-100 dark:border-gray-700">
             <div class="flex items-start space-x-2 pr-2">
                 <span class="text-gray-400 font-normal w-3 mt-0.5">7.</span>
-                <span class="leading-snug text-gray-500">Laboratorijska analiza funkcij organov</span>
+                <span class="leading-snug text-gray-500 dark:text-gray-400">Laboratorijska analiza funkcij organov</span>
             </div>
             <i class="far fa-circle text-gray-300 mt-0.5"></i>
         </div>
 
-        <div class="flex items-start justify-between py-3 border-b border-gray-100">
+        <div class="flex items-start justify-between py-3 border-b border-gray-100 dark:border-gray-700">
             <div class="flex items-start space-x-2 pr-2">
                 <span class="text-gray-400 font-normal w-3 mt-0.5">8.</span>
-                <span class="leading-snug text-gray-500">Metabolni indeks</span>
+                <span class="leading-snug text-gray-500 dark:text-gray-400">Metabolni indeks</span>
             </div>
             <i class="far fa-circle text-gray-300 mt-0.5"></i>
         </div>
 
-        <div class="flex items-start justify-between py-3 border-b border-gray-100">
+        <div class="flex items-start justify-between py-3 border-b border-gray-100 dark:border-gray-700">
             <div class="flex items-start space-x-2 pr-2">
                 <span class="text-gray-400 font-normal w-3 mt-0.5">9.</span>
-                <span class="leading-snug text-gray-500">Analiza vseh rezultatov</span>
+                <span class="leading-snug text-gray-500 dark:text-gray-400">Analiza vseh rezultatov</span>
             </div>
             <i class="far fa-clock text-yellow-500 mt-0.5"></i>
         </div>
@@ -175,7 +175,7 @@
         <div class="flex items-start justify-between py-3">
             <div class="flex items-start space-x-2 pr-2">
                 <span class="text-gray-400 font-normal w-3 mt-0.5">10.</span>
-                <span class="leading-snug text-gray-500">Zaključni posvet s specialistom</span>
+                <span class="leading-snug text-gray-500 dark:text-gray-400">Zaključni posvet s specialistom</span>
             </div>
             <i class="far fa-circle text-gray-300 mt-0.5"></i>
         </div>
@@ -188,32 +188,37 @@
 
 
     <!-- Bottom Navigation -->
-    <nav class="absolute bottom-0 w-full bg-white border-t border-gray-200 pb-5 pt-3 px-6 z-40">
+    <nav class="absolute bottom-0 w-full bg-white dark:bg-gray-800 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 dark:border-gray-800 pb-5 pt-3 px-2 z-40 transition-colors duration-300">
         <div class="flex justify-between items-center">
 
-            <a href="domov.html" class="flex flex-col items-center space-y-1 text-gray-400 hover:text-[#114232] transition">
+            <a href="domov.html" class="flex flex-col items-center space-y-1 text-gray-400 hover:text-[#114232] dark:hover:text-green-400 transition-all duration-300 transform hover:-translate-y-1 w-1/6 transform transition-all duration-300 hover:-translate-y-0.5">
                 <i class="fas fa-home text-lg"></i>
-                <span class="text-[10px] font-medium">Domov</span>
+                <span class="text-[9px] font-medium truncate w-full text-center">Domov</span>
             </a>
 
-            <a href="narocanje.html" class="flex flex-col items-center space-y-1 text-gray-400 hover:text-[#114232] transition">
+            <a href="narocanje.html" class="flex flex-col items-center space-y-1 text-gray-400 hover:text-[#114232] dark:hover:text-green-400 transition-all duration-300 transform hover:-translate-y-1 w-1/6 transform transition-all duration-300 hover:-translate-y-0.5">
                 <i class="far fa-calendar-alt text-lg"></i>
-                <span class="text-[10px] font-medium">Naročanje</span>
+                <span class="text-[9px] font-medium truncate w-full text-center">Naročanje</span>
             </a>
 
-            <a href="napredek.html" class="flex flex-col items-center space-y-1 text-[#114232] transition">
+            <a href="napredek.html" class="flex flex-col items-center space-y-1 text-[#114232] dark:text-green-400 hover:text-[#114232] dark:hover:text-green-400 transition-all duration-300 transform hover:-translate-y-1 w-1/6 transform transition-all duration-300 hover:-translate-y-0.5">
                 <i class="fas fa-tasks text-lg"></i>
-                <span class="text-[10px] font-medium">Napredek</span>
+                <span class="text-[9px] font-medium truncate w-full text-center">Napredek</span>
             </a>
 
-            <a href="storitve.html" class="flex flex-col items-center space-y-1 text-gray-400 hover:text-[#114232] transition">
-                <i class="fas fa-stethoscope text-lg"></i>
-                <span class="text-[10px] font-medium">Storitve</span>
+            <a href="telemedicina.html" class="flex flex-col items-center space-y-1 text-gray-400 hover:text-[#114232] dark:hover:text-green-400 transition-all duration-300 transform hover:-translate-y-1 w-1/6 transform transition-all duration-300 hover:-translate-y-0.5">
+                <i class="fas fa-video text-lg"></i>
+                <span class="text-[9px] font-medium truncate w-full text-center">Video</span>
             </a>
 
-            <a href="nastavitve.html" class="flex flex-col items-center space-y-1 text-gray-400 hover:text-[#114232] transition">
-                <i class="fas fa-user-circle text-lg"></i>
-                <span class="text-[10px] font-medium">Profil</span>
+            <a href="sporocila.html" class="flex flex-col items-center space-y-1 text-gray-400 hover:text-[#114232] dark:hover:text-green-400 transition-all duration-300 transform hover:-translate-y-1 w-1/6 transform transition-all duration-300 hover:-translate-y-0.5">
+                <i class="far fa-envelope text-lg"></i>
+                <span class="text-[9px] font-medium truncate w-full text-center">Sporočila</span>
+            </a>
+
+            <a href="nastavitve.html" class="flex flex-col items-center space-y-1 text-gray-400 hover:text-[#114232] dark:hover:text-green-400 transition-all duration-300 transform hover:-translate-y-1 w-1/6 transform transition-all duration-300 hover:-translate-y-0.5">
+                <i class="fas fa-cog text-lg"></i>
+                <span class="text-[9px] font-medium truncate w-full text-center">Nastavitve</span>
             </a>
 
         </div>
